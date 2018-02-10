@@ -8,10 +8,10 @@ function init() {
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
-        zoom: 16,
+        zoom: 12,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(40.722330, -73.992905), // You Address Here
+        center: new google.maps.LatLng(34.032463, -118.395863), // You Address Here
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
