@@ -1,126 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="img/misc/favicon.png">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>INNOGIRTH
-    </title>
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- <link href="css/ionicons.min.css" rel="stylesheet"> -->
-    <!-- Bootstrap Core CSS-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS-->
-    <link href="css/universal.css" rel="stylesheet">
-  </head>
-  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" class="top">
-    <!-- Preloader-->
-    <div id="preloader">
-      <div id="status"></div>
-    </div>
-    <!-- Navigation One Page-->
-    <nav class="navbar navbar-universal navbar-custom navbar-fixed-top navbar-onepage">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" data-toggle="collapse" data-target=".navbar-main-collapse" class="navbar-toggle">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/misc/favicon.png">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>INNOGIRTH
+  </title>
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- <link href="css/ionicons.min.css" rel="stylesheet"> -->
+  <!-- Bootstrap Core CSS-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS-->
+  <link href="css/universal.css" rel="stylesheet">
+  <style>
+    .modal-backdrop {
+      z-index: 990;
+    }
+
+    .modal {
+      top: 77px;
+    }
+
+    .modal-dialog {
+      width: fit-content;
+    }
+
+    section {
+      z-index: auto;
+    }
+
+    .bg-img2 {
+      background: none;
+    }
+  </style>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" class="top">
+  <!-- Preloader-->
+  <div id="preloader">
+    <div id="status"></div>
+  </div>
+  <!-- Navigation One Page-->
+  <nav class="navbar navbar-universal navbar-custom navbar-fixed-top navbar-onepage">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" data-toggle="collapse" data-target=".navbar-main-collapse" class="navbar-toggle">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button><a href="#page-top" class="navbar-brand page-scroll">
-            <!-- Text or Image logo--><img src="img/logo.png" alt="Logo" class="logo"><img src="img/logodark.png" alt="Logo" class="logodark"></a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling-->
-        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-          <ul class="nav navbar-nav">
-            <!-- Hidden li included to remove active class from about link when scrolled up past about section-->
-            <li class="hidden"><a href="#page-top"></a></li>
-            <li><a href="#about" class="page-scroll">About</a></li>
-            <li><a href="#services" class="page-scroll">Services</a></li>
-            <li><a href="#news" class="page-scroll">News</a></li>
-            <!-- <li><a href="#portfolio" class="page-scroll">Works</a></li>
-            <li><a href="#testimonials" class="page-scroll">Testimonials</a></li> -->
-            <li><a href="#contact" class="page-scroll">Contact</a></li>
-            <!-- <li><a href="index.html"><i data-wow-iteration="999" data-wow-duration="3s" class="fa fa-plus fa-plus wow flash"></i> All demos</a></li> -->
-          </ul>
-        </div>
+          </button>
+        <a href="#page-top" class="navbar-brand page-scroll">
+          <!-- Text or Image logo--><img src="img/logo.png" alt="Logo" class="logo"><img src="img/logodark.png" alt="Logo" class="logodark"></a>
       </div>
-    </nav>
-    <!-- Header-->
-    <header data-background="img/header/21.jpg" class="intro">
-      <!-- Intro Header-->
-      <div class="intro-body">
-        <!-- <p><img src="img/logohipsta.png" alt=""></p> -->
-        <h1><span class="rotate">
+      <!-- Collect the nav links, forms, and other content for toggling-->
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <!-- Hidden li included to remove active class from about link when scrolled up past about section-->
+          <li class="hidden"><a href="#page-top"></a></li>
+          <li><a href="#about" class="page-scroll">About</a></li>
+          <li><a href="#services" class="page-scroll">Services</a></li>
+          <li><a href="#news" class="page-scroll">News</a></li>
+          <!-- <li><a href="#portfolio" class="page-scroll">Works</a></li>
+            <li><a href="#testimonials" class="page-scroll">Testimonials</a></li> -->
+          <li><a href="#contact" class="page-scroll">Contact</a></li>
+          <!-- <li><a href="index.html"><i data-wow-iteration="999" data-wow-duration="3s" class="fa fa-plus fa-plus wow flash"></i> All demos</a></li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Header-->
+  <header data-background="img/header/21.jpg" class="intro">
+    <!-- Intro Header-->
+    <div class="intro-body">
+      <!-- <p><img src="img/logohipsta.png" alt=""></p> -->
+      <h1><span class="rotate">
             Web Development,
             Branding,
             Content,
             Support</span></h1>
-        <ul class="list-inline">
-          <li><a href="#about" class="btn btn-white page-scroll">WHO WE ARE</a></li>
-        </ul>
-      </div>
-    </header>
-    <!-- Slider-->
-    <section id="about" class="bg-dark section-small">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>Who We Are</h3>
-            <p class="no-pad">We are a one-stop web development to graphic design company based in Los Angeles, CA. We can take your creative project – logo, brochure, website, you name it – from initial twinkle through to publication and distribution, all right here under our own roof. Equally, we can step in and contribute at any stage of the process – with creative planning, design, photography, videography and publication, be it in print or electronically. At every point we bring expertise.<br />Working for a diverse range of clients both locally and nationally our aim is to get the job done on time and on budget!</p>
-            <h2 class="classic">Innogirth</h2>
-          </div>
-          <div data-wow-duration="2s" data-wow-delay=".2s" class="col-lg-5 col-lg-offset-1 wow zoomIn">
-            <div id="carousel-light2" class="carousel slide carousel-fade">
-              <ol class="carousel-indicators">
-                <li data-target="#carousel-light2" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-light2" data-slide-to="1"></li>
-                <li data-target="#carousel-light2" data-slide-to="2"></li>
-              </ol>
-              <div role="listbox" class="carousel-inner">
-                <div class="item active"><img src="img/misc/4.png" alt="" class="img-responsive center-block"></div>
-                <div class="item"><img src="img/misc/5.png" alt="" class="img-responsive center-block"></div>
-                <div class="item"><img src="img/misc/6.png" alt="" class="img-responsive center-block"></div>
-              </div>
+      <ul class="list-inline">
+        <li><a href="#about" class="btn btn-white page-scroll">WHO WE ARE</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- Slider-->
+  <section id="about" class="bg-dark section-small">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h3>Who We Are</h3>
+          <p class="no-pad">We are a one-stop web development to graphic design company based in Los Angeles, CA. We can take your creative project – logo, brochure, website, you name it – from initial twinkle through to publication and distribution, all right here under
+            our own roof. Equally, we can step in and contribute at any stage of the process – with creative planning, design, photography, videography and publication, be it in print or electronically. At every point we bring expertise.<br />Working
+            for a diverse range of clients both locally and nationally our aim is to get the job done on time and on budget!</p>
+          <h2 class="classic">Innogirth</h2>
+        </div>
+        <div data-wow-duration="2s" data-wow-delay=".2s" class="col-lg-5 col-lg-offset-1 wow zoomIn">
+          <div id="carousel-light2" class="carousel slide carousel-fade">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-light2" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-light2" data-slide-to="1"></li>
+              <li data-target="#carousel-light2" data-slide-to="2"></li>
+            </ol>
+            <div role="listbox" class="carousel-inner">
+              <div class="item active"><img src="img/misc/4.png" alt="" class="img-responsive center-block"></div>
+              <div class="item"><img src="img/misc/5.png" alt="" class="img-responsive center-block"></div>
+              <div class="item"><img src="img/misc/6.png" alt="" class="img-responsive center-block"></div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Services Section-->
-    <section id="services" class="bg-dark2">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <h3>Our Services</h3>
-            <p>We deliver transformational websites, branding and digital marketing plans. Everything we do is grounded in analytics, evidence and research to grow your business online.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div data-wow-delay=".2s" class="col-lg-3 col-sm-6 wow fadeIn">
-            <h4><i class="icon icon-big ion-ios-analytics-outline"></i>WEB DEVELOPMENT</h4>
-            <p>Websites, like people, come in all shapes and sizes. Some are loud, and some go quietly about their business. Website technology has greatly improved over the last few years, but how do you make your physical presence be replicated in the digital space – and help your company be heard?</p>
-          </div>
-          <div data-wow-delay=".4s" class="col-lg-3 col-sm-6 wow fadeIn">
-            <h4><i class="icon icon-big ion-ios-pie-outline"></i>CONTENT</h4>
-            <p>A picture speaks a thousand words. Having a library of great photography and videography is a key tool in your brand pack. We carry out studio or location photography, all including art direction and post production services.</p>
-          </div>
-          <div data-wow-delay=".6s" class="col-lg-3 col-sm-6 wow fadeIn">
-            <h4><i class="icon icon-big ion-ios-game-controller-b-outline"></i>BRANDING</h4>
-            <p>Branding is more than just a logo. We are here to help define your proposition, personality and edge, and translate this into iconic visuals. Innogirth's 360 approach to branding allows you to think strategically and build a brand that lasts.</p>
-          </div>
-          <div data-wow-delay=".2s" class="col-lg-3 col-sm-6 wow fadeIn">
-            <h4><i class="icon icon-big ion-ios-stopwatch-outline"></i>SUPPORT</h4>
-            <p>We love our customers, we’re not here to build you a website and say goodbye. Our client retention speaks for itself with many customers being with us for over a decade. We have a variety of support and maintenance packages that will give you complete peace of mind.</p>
-          </div>
+    </div>
+  </section>
+  <!-- Services Section-->
+  <section id="services" class="bg-dark2">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h3>Our Services</h3>
+          <p>We deliver transformational websites, branding and digital marketing plans. Everything we do is grounded in analytics, evidence and research to grow your business online.</p>
         </div>
       </div>
-    </section>
-    <!-- Slider-->
-    <!-- <section id="action-slider" class="bg-dark">
+      <div class="row">
+        <div data-wow-delay=".2s" class="col-lg-3 col-sm-6 wow fadeIn">
+          <h4><i class="icon icon-big ion-ios-analytics-outline"></i>WEB DEVELOPMENT</h4>
+          <p>Websites, like people, come in all shapes and sizes. Some are loud, and some go quietly about their business. Website technology has greatly improved over the last few years, but how do you make your physical presence be replicated in the digital
+            space – and help your company be heard?</p>
+        </div>
+        <div data-wow-delay=".4s" class="col-lg-3 col-sm-6 wow fadeIn">
+          <h4><i class="icon icon-big ion-ios-pie-outline"></i>CONTENT</h4>
+          <p>A picture speaks a thousand words. Having a library of great photography and videography is a key tool in your brand pack. We carry out studio or location photography, all including art direction and post production services.</p>
+        </div>
+        <div data-wow-delay=".6s" class="col-lg-3 col-sm-6 wow fadeIn">
+          <h4><i class="icon icon-big ion-ios-game-controller-b-outline"></i>BRANDING</h4>
+          <p>Branding is more than just a logo. We are here to help define your proposition, personality and edge, and translate this into iconic visuals. Innogirth's 360 approach to branding allows you to think strategically and build a brand that lasts.</p>
+        </div>
+        <div data-wow-delay=".2s" class="col-lg-3 col-sm-6 wow fadeIn">
+          <h4><i class="icon icon-big ion-ios-stopwatch-outline"></i>SUPPORT</h4>
+          <p>We love our customers, we’re not here to build you a website and say goodbye. Our client retention speaks for itself with many customers being with us for over a decade. We have a variety of support and maintenance packages that will give you
+            complete peace of mind.</p>
+        </div>
+      </div>
+      <ul class="list-inline">
+        <li><a class="btn btn-white" data-toggle="modal" data-target="#myModal">COMPARE PLANS</a></li>
+      </ul>
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title btn-white" id="myModalLabel">PLANS</h4>
+            </div>
+            <div class="modal-body">
+              <div style="flex: 0 0 auto; margin: 40px 0px 83px; padding: 0px 40px; display: flex;">
+                <div style="align-items: center; width: 186px; background: rgb(235, 236, 237); display: flex; border: 2px solid rgb(235, 236, 237); border-radius: 2px; flex-direction: column; height: 485px; margin: 0px 5px;">
+                  <div style="color: rgb(38, 156, 226); font-size: 14px; font-weight: 700; letter-spacing: 1px; line-height: 19px; margin-top: 33px;">TBA</div>
+                  <div style="color: rgb(48, 57, 64); font-size: 28px; font-weight: 500; line-height: 38px; margin: 19px 0px 41px;">TBA</div>
+                  <div style="background: rgb(214, 218, 219); margin: 30px 0px 8px; height: 2px; width: 40px;"></div>
+                  <div style="font-size: 13px; line-height: 18px; display: flex; align-items: center; flex-direction: column; margin-top: 18px;">
+                    <div style="color: rgb(48, 57, 64); font-weight: 500;">Person Data</div>
+                    <div style="color: rgb(98, 108, 115); margin-top: 2px;">100 matches/mo.</div>
+                  </div>
+                  <div style="font-size: 13px; line-height: 18px; display: flex; align-items: center; flex-direction: column; margin-top: 18px;">
+                    <div style="color: rgb(48, 57, 64); font-weight: 500;">Company Data</div>
+                    <div style="color: rgb(98, 108, 115); margin-top: 2px;">100 matches/mo.</div>
+                  </div>
+                  <div style="font-size: 13px; line-height: 18px; display: flex; align-items: center; flex-direction: column; margin-top: 18px;">
+                    <div style="color: rgb(48, 57, 64); font-weight: 500;">Rate Limit</div>
+                    <div style="color: rgb(98, 108, 115); margin-top: 2px;">60 queries/min.</div>
+                  </div>
+                  <div style="font-size: 13px; line-height: 18px; display: flex; align-items: center; flex-direction: column; margin-top: 18px;">
+                    <div style="color: rgb(48, 57, 64); font-weight: 500;"></div>
+                    <div style="color: rgb(98, 108, 115); margin-top: 2px;"></div>
+                  </div>
+                </div>
+                <div style="align-items: center; width: 186px; background: rgb(255, 255, 255); cursor: pointer; display: flex; border: 2px solid rgb(235, 236, 237); border-radius: 2px; flex-direction: column; height: 485px; margin: 0px 5px;">
+                  <div style="color: rgb(38, 156, 226); font-size: 14px; font-weight: 700; letter-spacing: 1px; line-height: 19px; margin-top: 33px;">STARTER</div>
+                  <div style="display: flex; flex-direction: column;">
+                    <div style="color: rgb(48, 57, 64); font-size: 32px; font-weight: 500; line-height: 44px; margin-top: 15px;">TBA</div>
+                    <div style="color: rgb(93, 103, 109); font-size: 15px; line-height: 20px; margin: -4px 0px 23px;">per month</div>
+                  </div>
+                  <div
+                    style="background: rgb(235, 236, 237); margin: 30px 0px 8px; height: 2px; width: 40px;"></div>
+                <div style="font-size: 13px; line-height: 18px; display: flex; align-items: center; flex-direction: column; margin-top: 18px;">
+                  <div style="color: rgb(48, 57, 64); font-weight: 500;">Person Data</div>
+                  <div style="color: rgb(98, 108, 115); margin-top: 2px;">2,500 matches/mo.</div>
+                </div>
+                <div style="font-size: 13px; line-height: 18px; display: flex; align-items: center; flex-direction: column; margin-top: 18px;">
+                  <div style="color: rgb(48, 57, 64); font-weight: 500;">Company Data</div>
+                  <div style="color: rgb(98, 108, 115); margin-top: 2px;">2,500 matches/mo.</div>
+                </div>
+                <div style="font-size: 13px; line-height: 18px; display: flex; align-items: center; flex-direction: column; margin-top: 18px;">
+                  <div style="color: rgb(48, 57, 64); font-weight: 500;">Rate Limit</div>
+                  <div style="color: rgb(98, 108, 115); margin-top: 2px;">400 queries/min.</div>
+                </div>
+                <div style="font-size: 13px; line-height: 18px; display: flex; align-items: center; flex-direction: column; margin-top: 18px;">
+                  <div style="color: rgb(48, 57, 64); font-weight: 500;"></div>
+                  <div style="color: rgb(98, 108, 115); margin-top: 2px;"></div>
+                </div>
+              </div>
+              <div style="align-items: center; width: 186px; background: rgb(255, 255, 255); cursor: pointer; display: flex; border: 2px solid rgb(235, 236, 237); border-radius: 2px; flex-direction: column; height: 485px; margin: 0px 5px;">
+                <div style="color: rgb(38, 156, 226); font-size: 14px; font-weight: 700; letter-spacing: 1px; line-height: 19px; margin-top: 33px;">PLUS</div>
+                <div style="display: flex; flex-direction: column;">
+                  <div style="color: rgb(48, 57, 64); font-size: 32px; font-weight: 500; line-height: 44px; margin-top: 15px;">TBA</div>
+                  <div style="color: rgb(93, 103, 109); font-size: 15px; line-height: 20px; margin: -4px 0px 23px;">per month</div>
+                </div>
+                <div
+                  style="background: rgb(235, 236, 237); margin: 30px 0px 8px; height: 2px; width: 40px;"></div>
+              <div style="font-size: 13px; line-height: 18px; display: flex; align-items: center; flex-direction: column; margin-top: 18px;">
+                <div style="color: rgb(48, 57, 64); font-weight: 500;">Person Data</div>
+                <div style="color: rgb(98, 108, 115); margin-top: 2px;">15,000 matches/mo.</div>
+              </div>
+              <div style="font-size: 13px; line-height: 18px; display: flex; align-items: center; flex-direction: column; margin-top: 18px;">
+                <div style="color: rgb(48, 57, 64); font-weight: 500;">Company Data</div>
+                <div style="color: rgb(98, 108, 115); margin-top: 2px;">15,000 matches/mo.</div>
+              </div>
+              <div style="font-size: 13px; line-height: 18px; display: flex; align-items: center; flex-direction: column; margin-top: 18px;">
+                <div style="color: rgb(48, 57, 64); font-weight: 500;">Rate Limit</div>
+                <div style="color: rgb(98, 108, 115); margin-top: 2px;">400 queries/min.</div>
+              </div>
+              <div style="font-size: 13px; line-height: 18px; display: flex; align-items: center; flex-direction: column; margin-top: 18px;">
+                <div style="color: rgb(48, 57, 64); font-weight: 500;"></div>
+                <div style="color: rgb(98, 108, 115); margin-top: 2px;"></div>
+              </div>
+            </div>
+            <div style="align-items: center; width: 186px; background: rgb(255, 255, 255); cursor: pointer; display: flex; border: 2px solid rgb(235, 236, 237); border-radius: 2px; flex-direction: column; height: 485px; margin: 0px 5px;">
+              <div style="color: rgb(38, 156, 226); font-size: 14px; font-weight: 700; letter-spacing: 1px; line-height: 19px; margin-top: 33px;">PREMIUM</div>
+              <div style="display: flex; flex-direction: column;">
+                <div style="color: rgb(48, 57, 64); font-size: 32px; font-weight: 500; line-height: 44px; margin-top: 15px;">TBA</div>
+                <div style="color: rgb(93, 103, 109); font-size: 15px; line-height: 20px; margin: -4px 0px 23px;">per month</div>
+              </div>
+              <div
+                style="background: rgb(235, 236, 237); margin: 30px 0px 8px; height: 2px; width: 40px;"></div>
+            <div style="font-size: 13px; line-height: 18px; display: flex; align-items: center; flex-direction: column; margin-top: 18px;">
+              <div style="color: rgb(48, 57, 64); font-weight: 500;">Person Data</div>
+              <div style="color: rgb(98, 108, 115); margin-top: 2px;">50,000 matches/mo.</div>
+            </div>
+            <div style="font-size: 13px; line-height: 18px; display: flex; align-items: center; flex-direction: column; margin-top: 18px;">
+              <div style="color: rgb(48, 57, 64); font-weight: 500;">Company Data</div>
+              <div style="color: rgb(98, 108, 115); margin-top: 2px;">50,000 matches/mo.</div>
+            </div>
+            <div style="font-size: 13px; line-height: 18px; display: flex; align-items: center; flex-direction: column; margin-top: 18px;">
+              <div style="color: rgb(48, 57, 64); font-weight: 500;">Rate Limit</div>
+              <div style="color: rgb(98, 108, 115); margin-top: 2px;">400 queries/min.</div>
+            </div>
+            <div style="font-size: 13px; line-height: 18px; display: flex; align-items: center; flex-direction: column; margin-top: 18px;">
+              <div style="color: rgb(48, 57, 64); font-weight: 500;">Data Subscriptions</div>
+              <div style="color: rgb(98, 108, 115); margin-top: 2px;">Available</div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <!-- Slider-->
+  <!-- <section id="action-slider" class="bg-dark">
       <div class="container">
         <div class="row">
           <div class="col-lg-5">
@@ -144,8 +290,8 @@
         </div>
       </div>
     </section> -->
-    <!-- Quotes-->
-    <!-- <section class="quote section-small bg-img3 text-center">
+  <!-- Quotes-->
+  <!-- <section class="quote section-small bg-img3 text-center">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
@@ -157,8 +303,8 @@
         </div>
       </div>
     </section> -->
-    <!-- About Section-->
-    <!-- <section id="about2" class="bg-dark2">
+  <!-- About Section-->
+  <!-- <section id="about2" class="bg-dark2">
       <div class="container wow fadeIn">
         <div class="row">
           <div class="col-lg-6">
@@ -180,8 +326,8 @@
         </div>
       </div>
     </section> -->
-    <!-- News Block-->
-    <!-- <section id="news" class="bg-dark">
+  <!-- News Block-->
+  <!-- <section id="news" class="bg-dark">
       <div class="container">
         <h3 class="pull-left">Latest news</h3>
         <div class="pull-right">
@@ -216,8 +362,8 @@
         </div>
       </div>
     </section> -->
-    <!-- Facts section-->
-    <!-- <section class="facts section-small bg-img">
+  <!-- Facts section-->
+  <!-- <section class="facts section-small bg-img">
       <div class="overlay"></div>
       <div class="container text-center">
         <div class="row">
@@ -236,8 +382,8 @@
         </div>
       </div>
     </section> -->
-    <!-- Services Section-->
-    <!-- <section class="bg-dark">
+  <!-- Services Section-->
+  <!-- <section class="bg-dark">
       <div class="container text-center">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2">
@@ -264,8 +410,8 @@
         </div>
       </div>
     </section> -->
-    <!-- Action video-->
-    <!-- <section class="section-small bg-img2 text-center">
+  <!-- Action video-->
+  <!-- <section class="section-small bg-img2 text-center">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
@@ -277,21 +423,21 @@
         </div>
       </div>
     </section> -->
-    <!-- Testimonials Section-->
-    <!-- <section id="testimonials" class="bg-dark">
+  <!-- Testimonials Section-->
+  <!-- <section id="testimonials" class="bg-dark">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
             <h3 class="text-center">Testimonials</h3>
             <div id="carousel-testimonials" data-ride="carousel" class="carousel slide carousel-fade"> -->
-              <!-- Indicators-->
-              <!-- <ol class="carousel-indicators">
+  <!-- Indicators-->
+  <!-- <ol class="carousel-indicators">
                 <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel-testimonials" data-slide-to="1"></li>
                 <li data-target="#carousel-testimonials" data-slide-to="2"></li>
               </ol> -->
-              <!-- Wrapper for slides-->
-              <!-- <div role="listbox" class="carousel-inner">
+  <!-- Wrapper for slides-->
+  <!-- <div role="listbox" class="carousel-inner">
                 <div class="item active"><img src="img/testimonials/1.jpg" alt="" class="center-block">
                   <div class="carousel-caption">
                     <h2 class="classic">Richard Kindall</h2>
@@ -316,99 +462,100 @@
         </div>
       </div>
     </section> -->
-    <!-- Contact Section-->
-    <section id="contact" class="bg-img2">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5">
-            <h3>contact us</h3>
-            <p>We are here to provide you with more information, answer any questions you may have and create an effective solution for your needs.</p>
-            <hr>
-            <h5><i class="fa fa-map-marker fa-fw fa-lg"></i> PO BOX 34514. LOS ANGELES. CA 90034
-            </h5>
-            <h5><i class="fa fa-envelope fa-fw fa-lg"></i> support@INNOGIRTH.COM
-            </h5>
-            <h5><i class="fa fa-phone fa-fw fa-lg"></i> (424) 341-9442
-            </h5>
-          </div>
-          <div class="col-md-5 col-md-offset-2">
-            <h3>Say hello</h3>
-            <!-- Contact Form - Enter your email address on line 17 of the mail/contact_me.php file to make this form work. For more information on how to do this please visit the Docs!-->
-            <form id="contactForm" name="sentMessage" novalidate="" class="dark-form">
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
-                  <label for="name" class="sr-only control-label">You Name</label>
-                  <input id="name" type="text" placeholder="You Name" required="" data-validation-required-message="Please enter name" class="form-control input-lg"><span class="help-block text-danger"></span>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
-                  <label for="email" class="sr-only control-label">You Email</label>
-                  <input id="email" type="email" placeholder="You Email" required="" data-validation-required-message="Please enter email" class="form-control input-lg"><span class="help-block text-danger"></span>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
-                  <label for="phone" class="sr-only control-label">You Phone</label>
-                  <input id="phone" type="tel" placeholder="You Phone" required="" data-validation-required-message="Please enter phone number" class="form-control input-lg"><span class="help-block text-danger"></span>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
-                  <label for="message" class="sr-only control-label">Message</label>
-                  <textarea id="message" rows="2" placeholder="Message" required="" data-validation-required-message="Please enter a message." aria-invalid="false" class="form-control input-lg"></textarea><span class="help-block text-danger"></span>
-                </div>
-              </div>
-              <div id="success"></div>
-              <button type="submit" class="btn btn-lg btn-dark">Send</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Map Section-->
-    <div id="mapdark"></div>
-    <!-- footer small-->
-    <div class="container-fluid footer-small bg-dark text-center">
+  <!-- Contact Section-->
+  <section id="contact" class="bg-img2">
+    <div class="overlay"></div>
+    <div class="container">
       <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <p data-wow-iteration="999" data-wow-duration="3s" class="wow flash"><a href="#page-top" class="page-scroll"><i class="icon ion-ios-arrow-up fa-2x"></i></a></p>
-          <ul class="list-inline">
-            <li><a href="/"><i class="fa fa-twitter fa-fw fa-2x"></i></a></li>
-            <li><a href="/"><i class="fa fa-facebook fa-fw fa-2x"></i></a></li>
-            <li><a href="/"><i class="fa fa-google-plus fa-fw fa-2x"></i></a></li>
-            <li><a href="/"><i class="fa fa-linkedin fa-fw fa-2x"></i></a></li>
-          </ul>
-          <p class="small"><a href="https://innogirth.com/">©2016 <i class="fa fa-heart fa-fw"></i>INNOGIRTH.COM</a></p>
+        <div class="col-md-5">
+          <h3>contact us</h3>
+          <p>We are here to provide you with more information, answer any questions you may have and create an effective solution for your needs.</p>
+          <hr>
+          <h5><i class="fa fa-map-marker fa-fw fa-lg"></i> PO BOX 34514. LOS ANGELES. CA 90034
+            </h5>
+          <h5><i class="fa fa-envelope fa-fw fa-lg"></i> support@INNOGIRTH.COM
+            </h5>
+          <h5><i class="fa fa-phone fa-fw fa-lg"></i> (424) 341-9442
+            </h5>
+        </div>
+        <div class="col-md-5 col-md-offset-2">
+          <h3>Say hello</h3>
+          <!-- Contact Form - Enter your email address on line 17 of the mail/contact_me.php file to make this form work. For more information on how to do this please visit the Docs!-->
+          <form id="contactForm" name="sentMessage" novalidate="" class="dark-form">
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls">
+                <label for="name" class="sr-only control-label">You Name</label>
+                <input id="name" type="text" placeholder="You Name" required="" data-validation-required-message="Please enter name" class="form-control input-lg"><span class="help-block text-danger"></span>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls">
+                <label for="email" class="sr-only control-label">You Email</label>
+                <input id="email" type="email" placeholder="You Email" required="" data-validation-required-message="Please enter email" class="form-control input-lg"><span class="help-block text-danger"></span>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls">
+                <label for="phone" class="sr-only control-label">You Phone</label>
+                <input id="phone" type="tel" placeholder="You Phone" required="" data-validation-required-message="Please enter phone number" class="form-control input-lg"><span class="help-block text-danger"></span>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls">
+                <label for="message" class="sr-only control-label">Message</label>
+                <textarea id="message" rows="2" placeholder="Message" required="" data-validation-required-message="Please enter a message." aria-invalid="false" class="form-control input-lg"></textarea><span class="help-block text-danger"></span>
+              </div>
+            </div>
+            <div id="success"></div>
+            <button type="submit" class="btn btn-lg btn-dark">Send</button>
+          </form>
         </div>
       </div>
     </div>
-    <!-- jQuery-->
-    <script src="js/jquery-1.12.4.min.js"></script>
-    <!-- Bootstrap Core JavaScript-->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Plugin JavaScript-->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.countdown.min.js"></script>
-    <script src="js/device.min.js"></script>
-    <script src="js/form.min.js"></script>
-    <script src="js/jquery.placeholder.min.js"></script>
-    <script src="js/jquery.shuffle.min.js"></script>
-    <script src="js/jquery.parallax.min.js"></script>
-    <script src="js/jquery.circle-progress.min.js"></script>
-    <script src="js/jquery.swipebox.min.js"></script>
-    <script src="js/smoothscroll.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/text-rotator.min.js"></script>
-        <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/-->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3E86i8mx1BZDlAaLcknh_mWl4F70i4os"></script>
-        <script src="js/map-dark.js"></script>
-    <!-- Custom Theme JavaScript-->
-    <script src="js/universal.js"></script>
-<!--[if lt IE 9]>
+  </section>
+  <!-- Map Section-->
+  <div id="mapdark"></div>
+  <!-- footer small-->
+  <div class="container-fluid footer-small bg-dark text-center">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <p data-wow-iteration="999" data-wow-duration="3s" class="wow flash"><a href="#page-top" class="page-scroll"><i class="icon ion-ios-arrow-up fa-2x"></i></a></p>
+        <ul class="list-inline">
+          <li><a href="/"><i class="fa fa-twitter fa-fw fa-2x"></i></a></li>
+          <li><a href="/"><i class="fa fa-facebook fa-fw fa-2x"></i></a></li>
+          <li><a href="/"><i class="fa fa-google-plus fa-fw fa-2x"></i></a></li>
+          <li><a href="/"><i class="fa fa-linkedin fa-fw fa-2x"></i></a></li>
+        </ul>
+        <p class="small"><a href="https://innogirth.com/">©2016 <i class="fa fa-heart fa-fw"></i>INNOGIRTH.COM</a></p>
+      </div>
+    </div>
+  </div>
+  <!-- jQuery-->
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <!-- Bootstrap Core JavaScript-->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Plugin JavaScript-->
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/device.min.js"></script>
+  <script src="js/form.min.js"></script>
+  <script src="js/jquery.placeholder.min.js"></script>
+  <script src="js/jquery.shuffle.min.js"></script>
+  <script src="js/jquery.parallax.min.js"></script>
+  <script src="js/jquery.circle-progress.min.js"></script>
+  <script src="js/jquery.swipebox.min.js"></script>
+  <script src="js/smoothscroll.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/text-rotator.min.js"></script>
+  <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3E86i8mx1BZDlAaLcknh_mWl4F70i4os"></script>
+  <script src="js/map-dark.js"></script>
+  <!-- Custom Theme JavaScript-->
+  <script src="js/universal.js"></script>
+  <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </body>
+</body>
+
 </html>
